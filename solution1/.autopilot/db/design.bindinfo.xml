@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_16ns_16_4_1_U1" SOURCE="project1/project1.cpp:7" VARIABLE="mul_ln7" MODULE="lab1" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_16ns_16_4_1_U1" SOURCE="project1/project1.cpp:7" VARIABLE="result" MODULE="lab1" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+</BindInfo>

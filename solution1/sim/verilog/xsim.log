@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 18 18:13:40 2023
+# Process ID: 9440
+# Current directory: C:/Users/DucLe/AppData/Roaming/Xilinx/Vitis/project1/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/lab1/xsim_script.tcl}
+# Log file: C:/Users/DucLe/AppData/Roaming/Xilinx/Vitis/project1/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/DucLe/AppData/Roaming/Xilinx/Vitis/project1/solution1/sim/verilog\xsim.jou
+# Running On: DESKTOP-NTEE40S, OS: Windows, CPU Frequency: 3992 MHz, CPU Physical cores: 16, Host memory: 16405 MB
+#-----------------------------------------------------------
+source xsim.dir/lab1/xsim_script.tcl
+# xsim {lab1} -view {{lab1_dataflow_ana.wcfg}} -tclbatch {lab1.tcl} -protoinst {lab1.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file lab1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_lab1_top/AESL_inst_lab1//AESL_inst_lab1_activity
+Time resolution is 1 ps
+open_wave_config lab1_dataflow_ana.wcfg
+source lab1.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_lab1_top/AESL_inst_lab1/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $coutputgroup]
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_return -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_lab1_top/AESL_inst_lab1/c -into $return_group -radix hex
+## add_wave /apatb_lab1_top/AESL_inst_lab1/b -into $return_group -radix hex
+## add_wave /apatb_lab1_top/AESL_inst_lab1/a -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_start -into $blocksiggroup
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_done -into $blocksiggroup
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_idle -into $blocksiggroup
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_lab1_top/AESL_inst_lab1/ap_clk -into $clockgroup
+## save_wave_config lab1.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 32 [0.00%] @ "125000"
+// RTL Simulation : 1 / 32 [100.00%] @ "175000"
+// RTL Simulation : 2 / 32 [100.00%] @ "215000"
+// RTL Simulation : 3 / 32 [100.00%] @ "255000"
+// RTL Simulation : 4 / 32 [100.00%] @ "295000"
+// RTL Simulation : 5 / 32 [100.00%] @ "335000"
+// RTL Simulation : 6 / 32 [100.00%] @ "375000"
+// RTL Simulation : 7 / 32 [100.00%] @ "415000"
+// RTL Simulation : 8 / 32 [100.00%] @ "455000"
+// RTL Simulation : 9 / 32 [100.00%] @ "495000"
+// RTL Simulation : 10 / 32 [100.00%] @ "535000"
+// RTL Simulation : 11 / 32 [100.00%] @ "575000"
+// RTL Simulation : 12 / 32 [100.00%] @ "615000"
+// RTL Simulation : 13 / 32 [100.00%] @ "655000"
+// RTL Simulation : 14 / 32 [100.00%] @ "695000"
+// RTL Simulation : 15 / 32 [100.00%] @ "735000"
+// RTL Simulation : 16 / 32 [100.00%] @ "775000"
+// RTL Simulation : 17 / 32 [100.00%] @ "815000"
+// RTL Simulation : 18 / 32 [100.00%] @ "855000"
+// RTL Simulation : 19 / 32 [100.00%] @ "895000"
+// RTL Simulation : 20 / 32 [100.00%] @ "935000"
+// RTL Simulation : 21 / 32 [100.00%] @ "975000"
+// RTL Simulation : 22 / 32 [100.00%] @ "1015000"
+// RTL Simulation : 23 / 32 [100.00%] @ "1055000"
+// RTL Simulation : 24 / 32 [100.00%] @ "1095000"
+// RTL Simulation : 25 / 32 [100.00%] @ "1135000"
+// RTL Simulation : 26 / 32 [100.00%] @ "1175000"
+// RTL Simulation : 27 / 32 [100.00%] @ "1215000"
+// RTL Simulation : 28 / 32 [100.00%] @ "1255000"
+// RTL Simulation : 29 / 32 [100.00%] @ "1295000"
+// RTL Simulation : 30 / 32 [100.00%] @ "1335000"
+// RTL Simulation : 31 / 32 [100.00%] @ "1375000"
+// RTL Simulation : 32 / 32 [100.00%] @ "1415000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1475 ns : File "C:/Users/DucLe/AppData/Roaming/Xilinx/Vitis/project1/solution1/sim/verilog/lab1.autotb.v" Line 380
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Nov 18 18:14:00 2023...
